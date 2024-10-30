@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "53525222214",
+    "project_id": "cleanwave-281cf",
+    "storage_bucket": "cleanwave-281cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53525222214:android:f7c0c4036b8dc825de0b47",
+        "android_client_info": {
+          "package_name": "com.CleanWave.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7GV3Ht2JeMRpBdQRbASaYiKFRxOI4qgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
