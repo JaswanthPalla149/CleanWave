@@ -1,4 +1,31 @@
-# CleanWave
+
+# CleanWave Documentation
+
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Architecture](#architecture)
+4. [Setup Instructions](#setup-instructions)
+5. [Contributing](#contributing)
+6. [Acknowledgments](#acknowledgments)
+
+---
+
+## Project Overview
+
+**CleanWave** is an innovative application designed to improve sanitation and hygiene communication between the public and government officials in localities. The app enables users to report issues, access educational resources, and participate in community improvement initiatives. It provides a transparent system for administrators to manage complaints and contributions effectively.
+
+## Features
+
+- **Location Selection**: Users can select their locality in Tirupati for localized support.
+- **User and Admin Roles**: Allows users to choose between public access or administrative functions.
+- **Complaint Management**: Users can raise complaints with detailed descriptions and images.
+- **Educational Resources**: Admins can provide information about sanitation and hygiene.
+- **Work Progress Tracking**: Transparency in ongoing sanitation efforts through updates from admins.
+- **Contribution Options**: Users can volunteer or donate to sanitation initiatives.
+- **Achievements Showcase**: Display of resolved complaints and community impact.
+- **Admin Dashboard**: Comprehensive management for admins, including complaint handling, contributions, and archives.
+
 <img src="https://github.com/vamsikrishnacr7/CleanWave/blob/main/IMG-20240823-WA0022.jpg" width="200" height="500" />
 This page allows us to select a locality in tirupati
 <img src="https://github.com/vamsikrishnacr7/CleanWave/blob/main/Images/IMG-20240823-WA0021.jpg" width="200" height="500" />
@@ -104,27 +131,77 @@ Educational Resources Page:
 
 Admin can update the sanitary educational resources for the public,this page is completely useful in case of viral spread of any sanitary issue related disease.
 
-CONTTRIBUTIONS
+## Architecture
 
-Back-end-->
+### Backend
+- **Firebase Setup**: The backend is powered by Firebase, utilizing Firestore for data management and Firebase Storage for file uploads.
+- **Data Structure**: Organized into collections for users, complaints, contributions, and resources, facilitating efficient data retrieval and management.
 
-Vamsi : set-up firesbase , explained all cocept of firebase and what part of firebase we are gonna use in our system like firestore and storage, planned how all the backend should be. firebase we used in our project is setup by him.
+### Frontend
+- **Flutter Framework**: Built using Flutter, providing a seamless user experience across Android devices.
+- **Modular Design**: Each page is developed as a module, promoting code reusability and maintainability.
 
-Jaswanth : implemented all the backend, like waht are the collections in firestore and the hierarchial architecture of firestore.
-Both Jaswanth and Vamsi coordinated with frontend devolopers to guide them create the pages in a way such that they are fit to the back-end architecture.
+### Team Contributions
+- **Backend**:
+  - **Vamsi**: Firebase setup and architectural planning.
+  - **Jaswanth**: Implementation of Firestore collections and structure.
+- **Frontend**:
+  - **Manoj**: Location and user selection pages.
+  - **Danish**: Admin and resource management pages.
+  - **Sreekar**: Complaint management and contributions pages.
+  - **Santhosh**: Work progress and contributions management pages.
 
-Front-end-->
+## Setup Instructions
 
-Manoj : contributed to project by creating "location selection page", "select user page", "admin login page". co-ordinated with Jaswanth for understanding back-end and succesfully implementing location selecton, role selection, admin login page.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/vamsikrishnacr7/CleanWave.git
+   ```
 
-Danish : contributed to project by creating "admin page", "public page", "upload resources page", "manage archives page", "archives page". co-ordinated with Vamsi for back-end.
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd CleanWave/android
+   ```
 
-Sreekar :  created "complaint box"-in public domain, "manage complaints "-in admin domain, "contributions page"-in public page.  Co-ordinated with Jaswanth for understanding what kind of fields can be accessed. wrote README.md file..
+3. **Add Firebase Configuration**:
+   - Place the `google-services.json` file in the `android/app` directory.
 
-Santhosh : created "work progress page"-in public domain, "manage work progress page "-in admin domain, "manage comtributions page"-in public domain. Implemented  phone-pay page. co-ordinated with vamsi.
+4. **Install Dependencies**:
+   - Ensure you have Flutter installed, then run:
+   ```bash
+   flutter pub get
+   ```
 
-Vamsi co-ordinated with all team mates for incorporating the message and call buttons.
-Jaswanth co-ordinated with all the team members for upload and pick documents.
+5. **Run the Application**:
+   ```bash
+   flutter run
+   ```
 
+## Contributing
 
-                                                                CLEAN WAVE
+We welcome contributions to enhance the CleanWave project. Here’s how you can help:
+
+1. **Fork the Repository**: Click the “Fork” button on the repository page.
+2. **Create a Branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Fork**: 
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Open a Pull Request**: Go to the original repository and create a pull request.
+
+## Acknowledgments
+
+We would like to thank everyone who contributed to the development of CleanWave:
+
+- **Vamsi**: Backend architecture and Firebase integration.
+- **Jaswanth**: Implementation of Firestore collections.
+- **Manoj, Danish, Sreekar, and Santhosh**: Frontend development and user experience design.
+- **Community Contributors**: Everyone who provided feedback and support throughout the project.
