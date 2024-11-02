@@ -1,0 +1,64 @@
+// Ensure buildscript is placed at the top
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.1'
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id 'com.google.gms.google-services' // Apply Google services after Android plugin
+}
+
+android {
+    namespace = "com.CleanWave.com"
+    compileSdk = 34  // Ensure the compileSdk is set to an integer
+    ndkVersion = "23.1.7779620" // Example NDK version, replace with actual if needed
+
+    compileOptions {
+       sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+     buildFeatures {
+        viewBinding true
+    }
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
+    defaultConfig {
+        applicationId = "com.CleanWave.com"
+        minSdk = 21 // Example, replace with flutter.minSdkVersion if set
+        targetSdk = 34 // Example, replace with flutter.targetSdkVersion if set
+        versionCode = 1 // Replace with flutter.versionCode if available
+        versionName = "1.0" // Replace with flutter.versionName if available
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug // Replace with release signing config if available
+        }
+    }
+}
+
+dependencies {
+    // Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:33.5.1')
+    
+    // Firebase products (add any others as needed)
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Other Firebase dependencies can be added here if needed
+}
+
+flutter {
+    source = "../.."
+}

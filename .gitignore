@@ -1,3 +1,40 @@
+# Firebase-related configuration files
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+web/firebase-config.js
+
+# Environment files (if used)
+.env
+.env.*
+
+# Additional Flutter-related files
+*.flutter-plugins
+*.flutter-plugins-dependencies
+.metadata
+**/Flutter/ephemeral/
+
+# iOS-specific files
+**/*.xcworkspace
+**/*.xcuserstate
+**/xcuserdata/
+**/xcshareddata/
+**/*.xcscmblueprint
+**/dgph
+
+# macOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+
+# Visual Studio Code (VSCode) settings
+.vscode/
+
+# Key and signing properties (keep these private)
+key.properties
+**/*.keystore
+**/*.jks
+
 # Miscellaneous
 *.class
 *.log
